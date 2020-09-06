@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe Demo</title>
+</head>
+<body>
+    <iframe src="" frameborder="1" width="800" height="500" title="crpoudyal">
+
+    </iframe>
+    <iframe src="" frameborder="1" width="800" height="500" title="crpoudyal">
+
+    </iframe>
+
+    <script type="text/javascript" lang="javascript">
+   var frames = window.frames;
+   var url = "https://www.crpoudyal.com.np";
+
+   for(var i=0;i<frames.length;i++){
+       frames[i].location=url;
+   }
+
+    </script>
+
+</body>
+</html>
