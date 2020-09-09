@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies in Javascript</title>
+</head>
+<body>
+    
+
+    <script type="text/javascript" lang="javascript">
+   //cookies
+   document.write("cookies <br/>");
+   var date =new Date();
+    date.setDate(date.getDate()+10);
+    document.cookie ="cart1=iphone 10; cart2=iphone 5s; cart3=iphone 11 PRO MAX; expires="+date+";"; 
+    document.cookie ="cart2=iphone 5s;  expires="+date+";"; 
+    document.cookie ="cart3=iphone 11 PRO MAX; expires="+date+";"; 
+
+     // key=value;  
+     //expires and path is optional
+
+    var getCookies = document.cookie;
+    document.write(getCookies);
+    var date =new Date();
+    date.setDate(12)
+    </script>
+</body>
+</html>
