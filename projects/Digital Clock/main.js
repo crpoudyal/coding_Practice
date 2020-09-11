@@ -6,7 +6,11 @@
      var hrs = time.getHours();
      var min = time.getMinutes();
      var sec = time.getSeconds();
+     var dn = "AM";
  
+     if(hrs>12){
+         dn ="PM";
+     }
      if (hrs > 12){
          hrs =hrs-12;
      }
@@ -17,12 +21,12 @@
          sec ='0'+sec;
      }
      if(min<10){
-        sec ='0'+min;
+        min ='0'+min;
     }
     if(hrs<10){
-        sec ='0'+hrs;
+        hrs ='0'+hrs;
     }
     
-     document.getElementById("clock").innerHTML = hrs + ":" + min + ":" + sec;
+     document.getElementById("clock").innerHTML = hrs + ":" + min + ":" + sec +" "+ dn;
  }
  
