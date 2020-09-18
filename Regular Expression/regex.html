@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+</head>
+<body>
+    <script type="text/javascript" lang="javascript">
+    //This is regular expression literal in js
+
+    // exec()-- This Function will return an array for match or null for no match
+
+    // test()-- This Function will return true if matches or False if no match
+    var reg = /Test/g;
+    var result =reg.exec("Test String 999737");
+    console.log(result);
+
+    var reg1 =/\d{3}/;
+    var result = reg1.exec("+977-9856 Hello World 14");
+    console.log(result);
+
+    var reg1 = /\d/;
+    var result = reg1.test("Test Expression  Hello World ");
+    console.log(result);
+
+    var reg1 = /\t/;
+    var result = reg1.exec("Test& Expression  Hello World ");
+    console.log(result);
+    
+    var reg1 = /\w{5}/;
+    var result = reg1.exec("Test& Expression  Hello World ");
+    console.log(result);
+
+    var reg1 = /[a-zA-Z]/gm;
+    var result = reg1.exec("Test& Expression  Hello World ");
+    console.log(result);
+
+
+  
+    </script>
+</body>
+</form>
+</html>
