@@ -28,11 +28,19 @@
     var result = reg1.exec("Test& Expression  Hello World ");
     console.log(result);
     
-    var reg1 = /\w{5}/;
-    var result = reg1.exec("Test& Expression  Hello World ");
+    var reg1 = /\d{5}/g;
+    var result = reg1.exec("Test& Expression33336777  Hello World 0002390");
+    console.log(result);
+    var result = reg1.exec("Test& Expression33336777  Hello World 0002390");
     console.log(result);
 
-    var reg1 = /[a-zA-Z]/gm;
+    var reg1 = /[a-zA-Z]/g;
+    var result = reg1.exec("Test& Expression  Hello World ");
+    console.log(result);
+    var result = reg1.exec("Test& Expression  Hello World ");
+    console.log(result);
+    var result = reg1.exec("Test& Expression  Hello World ");
+    console.log(result);
     var result = reg1.exec("Test& Expression  Hello World ");
     console.log(result);
 
