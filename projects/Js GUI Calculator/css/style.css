@@ -8,30 +8,22 @@
 
 .container{
     margin: auto;
-    height: 80vh;
-    width: 40%;
+    height: 50vh;
+    width: 30%;
     text-align: center;
     border-radius: 2%;
     /* border: 1px solid green; */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
     
 }
-.display{
-    width: auto;
-    height: 10vh;
-    background-color: indigo;
+input{
+    font-size: 50px;
+    width: 100%;
 }
-.keys{
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    align-items: center;
+button{
+    width: 84px;
+    height: 66px;
 }
-.keys p{
-    margin: 3%;
-    padding: 6%;
-    width:5%;
-    height:0.5%;
-    border:1px solid blue;
-    
+table{
+    margin: auto;
 }
