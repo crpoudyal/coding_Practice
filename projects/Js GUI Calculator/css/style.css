@@ -1,57 +1,35 @@
-/* Globel selector */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-/* Globel selector------Ends----- */
-
-.container {
-  margin: auto;
-  /* top,right,bottom,left */
-  height: 50vh;
-  width: 30vw;
+.container{
   text-align: center;
-  border-radius: 2%;
-  background-color: black;
- 
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000033;
+  margin-top:23px
 }
 
-h1 {
-  color: white;
+table{
+  margin: auto;
 }
-input {
-    background-color: black;
-    color: white;
-    border:1px solid white;
-    font-size: 50px;
-    width: 100%;
+
+input{
+  border-radius: 21px;
+  border: 4px solid black;
+  font-size:34px;
+  height: 10vh;
+  width: 500px;
 }
-button {
-  width: 70px;
-  height: 60px;
-  border-radius: 50%;
-  border: none;
-  font-size: 20px;
-  background-color: black;
-  color: white;
+
+button{
+  border:none;
+  border-radius: 20px;
+  font-size: 40px;
+  background: #978fa0;
+  width: 102px;
+  height: 90px;
+  margin: 6px;
+}
+
+.innerContainer{ 
+  background-color: #3e8fcc;
+  padding: 23px;
+  border-radius: 53px;
+  display: inline-block;
   
 }
-.operator{
-    border-radius: 50%;
-    color: #e78663;
-}
-#ans{
-    border-radius: 50%;
-    color: white;
-    background-color: #e78663;
-}
 
-table {
-  margin: auto;
-}
