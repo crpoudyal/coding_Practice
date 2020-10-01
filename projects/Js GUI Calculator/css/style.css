@@ -1,6 +1,5 @@
 .container{
   text-align: center;
-  margin-top:23px
 }
 
 table{
@@ -14,6 +13,11 @@ input{
   height: 10vh;
   width: 500px;
 }
+#ans{
+  width:500px;
+  background-color: orangered;
+  color: white;
+}
 
 button{
   border:none;
@@ -26,7 +30,7 @@ button{
 }
 
 .innerContainer{ 
-  background-color: #3e8fcc;
+  background-color: black;
   padding: 23px;
   border-radius: 53px;
   display: inline-block;
