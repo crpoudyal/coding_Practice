@@ -1,1 +1,7 @@
-.vscode
+
+.DS_Store
+.project
+*.code-workspace
+/bin
+/.settings
+*.class
