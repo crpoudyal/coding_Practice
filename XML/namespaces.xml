@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- here we use XML namespace because to communicate with this xml file there is same name of elements so to remove conflict we use XML namespaces -->
+<root>
+<h:table xmlns:h="http://www.w3.org/TR/html4/">
+  <h:tr>
+    <h:td>Apples</h:td>
+    <h:td>Bananas</h:td>
+  </h:tr>
+</h:table>
+
+<f:table xmlns:f="https://www.w3schools.com/furniture">
+  <h:tr>
+    <h:td>Monkey</h:td>
+    <h:td>Cat</h:td>
+  </h:tr>
+</f:table>
+</root>
