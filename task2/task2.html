@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+<body>
+     <!-- Javascript to print largest and smallest among 10 element of an array -->
+
+     <script>
+         var arr=[3,4,5,90,1,-9,4,7,0,10];
+         var lar = arr[0];
+         var sml = arr[0];
+
+        //  var s = arr.sort();
+        //  document.write("smallest "+ arr[0]);
+        //  document.write("Largest "+ arr[9]);
+        
+         for (var i=0;i<arr.length;i++){
+             if(arr[i]>lar){
+                 lar = arr[i];
+             }else if(arr[i]<sml){
+                 sml = arr[i];
+             }
+         }
+         document.write("The smallest element of an array is  "+ sml+"<br/>");
+         document.write("The Largest element of an array is  "+ lar); 
+     </script>
+    
+</body>
+</html>
