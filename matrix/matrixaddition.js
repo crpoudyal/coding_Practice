@@ -17,3 +17,4 @@ sumArrayElements(a, b, c)
 /* returned value:(Array)
 6, 9, 12
 */
+document.write("The result is "+sumArrayElements(a,b,c));
