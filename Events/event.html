@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>event</title>
-  </head>
-  <body>
-    <h3>JavaScript Events</h3>
-    <p id="para">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi culpa
-      neque, soluta molestiae porro nihil reprehenderit, at ullam corrupti
-      repellat ea doloremque nam assumenda a labore maiores nulla illum eveniet.
-    </p>
-    <code>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>event</title>
+</head>
+
+<body>
+  <h3>JavaScript Events</h3>
+  <p id="para">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi culpa
+    neque, soluta molestiae porro nihil reprehenderit, at ullam corrupti
+    repellat ea doloremque nam assumenda a labore maiores nulla illum eveniet.
+  </p>
+  <code>
       <h1 id="h1">Javascript Events</h1>
       <pre>
         load
@@ -39,22 +41,21 @@
       <p id="try"></p>
     </code>
 
-    <script type="text/javascript" lang="javascript">
-      // event listener to count how many times i clicked the button
-      document
-        .getElementsByTagName("button")[1]
-        .addEventListener("click", counter);
-      var count = 0;
-      function counter() {
-        count++;
-        var paragraph = "I have Clicked" + " " + count + " " + "times";
-        document.getElementById("try").innerHTML = paragraph;
-      }
+  <script type="text/javascript" lang="javascript">
+    // event listener to count how many times i clicked the button
+    document.getElementsByTagName("button")[1].addEventListener("click", counter);
+    var count = 0;
+    function counter() {
+      count++;
+      var paragraph = "I have Clicked" + " " + count + " " + "times";
+      document.getElementById("try").innerHTML = paragraph;
+    }
 
-      // Title Changed
-      function titleChange() {
-        document.getElementsByTagName("title")[0].innerHTML = " Title Changed";
-      }
-    </script>
-  </body>
+    // Title Changed
+    function titleChange() {
+      document.getElementsByTagName("title")[0].innerHTML = " Title Changed";
+    }
+  </script>
+</body>
+
 </html>
