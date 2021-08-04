@@ -9,22 +9,26 @@
 <body>
     <!-- program to find enter number is prime or compositive  -->
     <script>
-        const num = prompt("Enter any Number");
-        var isPrime = true;
-        if(num === 1){
-            document.write(num +" is neither prime nor compositive number");
-        }else if(num > 1){
-            for(var i=2;i<num;i++){
-                if(num % i == 0){
-                    isPrime = false;
+        function isPrime(num) {
+            var isPrime = true;
+            if(num === 1){
+                document.write(num +" is neither prime nor compositive number");
+                return;
+            }else if(num > 1){
+                for(var i=2;i<num;i++){
+                    if(num % i == 0){
+                        isPrime = false;
+                    }
                 }
             }
+            if(isPrime){
+                document.write(num +" is prime number");
+            }else{
+                document.write(num +" is compositive number");
+            }
         }
-        if(isPrime){
-            document.write(num +" is prime number");
-        }else{
-            document.write(num +" is compositive number");
-        }
+        const num = prompt("Enter any Number");
+        isPrime(parseInt(num));
     </script>
 </body>
 </html>
