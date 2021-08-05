@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
 </head>
-<body style="text-align:center" >
+<body style="text-align:center;" >
     <h2>Basic Arithmetic Function</h2>
     <form>
       <input type="text" name="text" id="op1" /><br/><br/>
       <input type="text" name="text" id="op2" /><br/><br/>
-        <input type="text" name="res" id="res" /><br/><br/>
+      <input type="text" name="res" id="res" /><br/><br/>
       <button onclick="add()">ADD</button>
       <button onclick="sub()">SUB</button><br/>
       <button onclick="div()">DIV</button>
@@ -19,14 +19,12 @@
     </form>
   </body>
   <script>
-      var op1= document.getElementById("op1").value;
-var op2= document.getElementById("op2").value;
 
 function add(){
   var op1= document.getElementById("op1").value;
   var op2= document.getElementById("op2").value;
   var s= parseInt(op1)+parseInt(op2);
-  var res= document.getElementById("res").value=s;
+  var res= document.getElementById("res").innerHTML=s;
 }
 function sub(){
   var op1= document.getElementById("op1").value;
